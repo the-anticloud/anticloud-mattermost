@@ -1,0 +1,706 @@
+{
+ "schema": "anticloud.tier-bench/1",
+ "project": "MATTERMOST",
+ "source": {
+  "repo_path": "E:\\fenta\\Downloads\\The Anticloud\\ANTICLOUD_REPOS\\CHAT_PLATFORMS\\MATTERMOST\\UPSTREAM_CLONE",
+  "git": {
+   "head": "REMOVED_CONTAMINATED_SHA_PENDING_API_RESOLVE",
+   "url": "https://github.com/the-anticloud/OPENMRS_CORE.git",
+   "branch": "master",
+   "committed_at": "2026-09-29T11:06:59+04:00",
+   "sha_verified_from": "local clone .git file read (no .git dir in clone)"
+  }
+ },
+ "metrics": {
+  "files_total": 2747,
+  "source_files_scanned": 2078,
+  "lines_of_code": 300428,
+  "languages": {
+   ".tsx": 1532,
+   ".ts": 434,
+   ".snap": 406,
+   ".scss": 215,
+   ".jsx": 83,
+   ".js": 30,
+   ".svg": 18,
+   "(none)": 8,
+   ".png": 5,
+   ".json": 4,
+   ".md": 3,
+   ".css": 3,
+   ".yml": 2,
+   ".txt": 2,
+   ".code-workspace": 1
+  }
+ },
+ "licence": {
+  "spdx": "Apache-2.0",
+  "class": "A",
+  "source_file": "LICENSE.txt",
+  "redistribution_allowed": true
+ },
+ "dependencies": {
+  "count": 0,
+  "unique": 0,
+  "by_ecosystem": {},
+  "list": []
+ },
+ "owasp_top10": {
+  "total_findings": 189,
+  "files_with_findings": 157,
+  "severity": {
+   "high": 19,
+   "medium": 3,
+   "low": 167
+  },
+  "categories": {
+   "A01-BrokenAccessControl": {
+    "count": 0,
+    "findings": []
+   },
+   "A02-CryptographicFailures": {
+    "count": 9,
+    "findings": [
+     {
+      "severity": "high",
+      "file": "components/common/svg_images_components/access_denied_happy_svg.tsx",
+      "line": 332,
+      "cwe": "CWE-327",
+      "snippet": "href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAi0AAAGvCAYAAACXeeU8AAAgAElEQVR4Xu3d7RM0WX0W4BNdVyMkQhAkawhvsrBqURX95N/vV19KK+EtkZSs2YW4CIEgYcMG6yZ9Km2nZ6Z7pmemfz1XV1HsPk9P9+nr"
+     },
+     {
+      "severity": "high",
+      "file": "components/common/svg_images_components/access_problem_svg.tsx",
+      "line": 288,
+      "cwe": "CWE-327",
+      "snippet": "xlinkHref='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAi0AAAGvCAYAAACXeeU8AAAgAElEQVR4Xu3d7RM0WX0W4BNdVyMkQhAkawhvsrBqURX95N/vV19KK+EtkZSs2YW4CIEgYcMG6yZ9Km2nZ6Z7pmemfz1XV1HsPk9"
+     },
+     {
+      "severity": "high",
+      "file": "components/common/svg_images_components/celebrate_svg.tsx",
+      "line": 35,
+      "cwe": "CWE-327",
+      "snippet": "xlinkHref='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAYAAACLz2ctAACKCklEQVR4nOz9d5gc1Zn+D3/OqdB5cpZGOQckkXPOYAwGG+864JzXYb32+uv12uuccwLnjHPGgEkmg0FIQqCcpRlNjh0rnPP741T"
+     },
+     {
+      "severity": "high",
+      "file": "components/common/svg_images_components/guest_access_svg.tsx",
+      "line": 414,
+      "cwe": "CWE-327",
+      "snippet": "xlinkHref='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWQAAAFhCAYAAABH1tCTAAAgAElEQVR4Xu2de68ty3XVO0CAACHBGOOExI5JBAriIcT3/wbwTyQCQQRiEgR2giHEEB42Rr/jHjfz1KnqmtVdvVattUdLW+fevar"
+     },
+     {
+      "severity": "high",
+      "file": "components/common/svg_images_components/two_people_chatting_svg.tsx",
+      "line": 387,
+      "cwe": "CWE-327",
+      "snippet": "xlinkHref='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXcAAAGuCAYAAABr8UYZAAAgAElEQVR4Xu2dO9j9SnXeJdNzOfRc3cbHcHowUMfmUicBUtvGpDYGUsfAcU2A4xoDpydgXGPAqR1Deozt3ijPb85aytJoJI1u+9t"
+     },
+     {
+      "severity": "high",
+      "file": "components/common/svg_images_components/upgrade_svg.tsx",
+      "line": 305,
+      "cwe": "CWE-327",
+      "snippet": "xlinkHref='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWQAAAFhCAYAAABH1tCTAAAgAElEQVR4Xu2de68ty3XVO0CAACHBGOOExI5JBAriIcT3/wbwTyQCQQRiEgR2giHEEB42Rr/jHjfz1KnqmtVdvVattUdLW+fevar"
+     },
+     {
+      "severity": "high",
+      "file": "components/common/svg_images_components/woman_up_arrows_and_clouds_svg.tsx",
+      "line": 260,
+      "cwe": "CWE-327",
+      "snippet": "xlinkHref='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWAAAAFbCAYAAADr3FQiAAAZlElEQVR4Xu3dh9Es2VkG4JYSEGwCAgLAJYAJAAEB4ALABYBRABgFAIgAcAEIoQAAJYBJAJOAoN6t+aimb/e0nfvNP/NM1dbuvX9"
+     },
+     {
+      "severity": "medium",
+      "file": "components/admin_console/cluster_table.jsx",
+      "line": 173,
+      "cwe": "CWE-327",
+      "snippet": "defaultMessage='Config File MD5'"
+     },
+     {
+      "severity": "high",
+      "file": "components/admin_console/feature_discovery/features/images/guest_access_svg.tsx",
+      "line": 407,
+      "cwe": "CWE-327",
+      "snippet": "xlinkHref='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWQAAAFhCAYAAABH1tCTAAAgAElEQVR4Xu2de68ty3XVO0CAACHBGOOExI5JBAriIcT3/wbwTyQCQQRiEgR2giHEEB42Rr/jHjfz1KnqmtVdvVattUdLW+fevar"
+     }
+    ]
+   },
+   "A03-Injection": {
+    "count": 10,
+    "findings": [
+     {
+      "severity": "high",
+      "file": "components/suggestion/channel_mention_provider.tsx",
+      "line": 103,
+      "cwe": "CWE-95",
+      "snippet": "const captured = (/\\B(~([^~\\r\\n]*))$/i).exec(pretext.toLowerCase());"
+     },
+     {
+      "severity": "high",
+      "file": "components/suggestion/emoticon_provider.jsx",
+      "line": 65,
+      "cwe": "CWE-95",
+      "snippet": "const captured = (/(^|\\s|^\\+|^-)(:([^:\\s]*))$/g).exec(pretext.toLowerCase());"
+     },
+     {
+      "severity": "high",
+      "file": "components/suggestion/search_channel_provider.tsx",
+      "line": 52,
+      "cwe": "CWE-95",
+      "snippet": "const captured = (/\\b(?:in|channel):\\s*(\\S*)$/i).exec(pretext.toLowerCase());"
+     },
+     {
+      "severity": "high",
+      "file": "components/suggestion/search_date_provider.tsx",
+      "line": 13,
+      "cwe": "CWE-95",
+      "snippet": "const captured = (/\\b(?:on|before|after):\\s*(\\S*)$/i).exec(pretext.toLowerCase());"
+     },
+     {
+      "severity": "high",
+      "file": "components/suggestion/search_user_provider.tsx",
+      "line": 86,
+      "cwe": "CWE-95",
+      "snippet": "const captured = (/\\bfrom:\\s*(\\S*)$/i).exec(pretext.toLowerCase());"
+     },
+     {
+      "severity": "high",
+      "file": "components/suggestion/at_mention_provider/at_mention_provider.jsx",
+      "line": 324,
+      "cwe": "CWE-95",
+      "snippet": "const captured = regexForAtMention.exec(pretext.toLowerCase());"
+     },
+     {
+      "severity": "high",
+      "file": "components/advanced_create_post/advanced_create_post.tsx",
+      "line": 514,
+      "cwe": "CWE-95",
+      "snippet": "const isReaction = Utils.REACTION_PATTERN.exec(post.message);"
+     },
+     {
+      "severity": "medium",
+      "file": "components/admin_console/license_settings/trial_license_card/trial_license_card.tsx",
+      "line": 36,
+      "cwe": "CWE-89",
+      "snippet": "time: moment(endDate).endOf('day').format('h:mm a ') + moment().tz(getBrowserTimezone()).format('z'),"
+     },
+     {
+      "severity": "medium",
+      "file": "components/admin_console/billing/billing_subscriptions/cloud_trial_banner.tsx",
+      "line": 88,
+      "cwe": "CWE-89",
+      "snippet": "time: moment(endDate).endOf('day').format('h:mm a ') + moment().tz(getBrowserTimezone()).format('z'),"
+     },
+     {
+      "severity": "high",
+      "file": "actions/views/create_comment.tsx",
+      "line": 167,
+      "cwe": "CWE-95",
+      "snippet": "const isReaction = Utils.REACTION_PATTERN.exec(message);"
+     }
+    ]
+   },
+   "A04-InsecureDesign": {
+    "count": 63,
+    "findings": [
+     {
+      "severity": "low",
+      "file": "components/autosize_textarea.tsx",
+      "line": 119,
+      "cwe": "CWE-",
+      "snippet": "// TODO: The provided `id` is sometimes hard-coded and used to interface with the"
+     },
+     {
+      "severity": "low",
+      "file": "components/dropdown_input.tsx",
+      "line": 10,
+      "cwe": "CWE-",
+      "snippet": "// TODO: This component needs work, should not be used outside of AddressInfo until this comment is removed."
+     },
+     {
+      "severity": "low",
+      "file": "components/formatted_markdown_message.test.tsx",
+      "line": 24,
+      "cwe": "CWE-",
+      "snippet": "id: 'xxx',"
+     },
+     {
+      "severity": "low",
+      "file": "components/multi_input.tsx",
+      "line": 10,
+      "cwe": "CWE-",
+      "snippet": "// TODO: This component needs work, should not be used outside of InviteMembersStep until this comment is removed."
+     },
+     {
+      "severity": "low",
+      "file": "components/team_selector_modal/team_selector_modal.test.tsx",
+      "line": 13,
+      "cwe": "CWE-",
+      "snippet": "currentSchemeId: 'xxx',"
+     },
+     {
+      "severity": "low",
+      "file": "components/suggestion/search_suggestion_list.tsx",
+      "line": 140,
+      "cwe": "CWE-",
+      "snippet": "// temporary hack to add dividers between public and private channels in the search suggestion list"
+     },
+     {
+      "severity": "low",
+      "file": "components/suggestion/switch_channel_provider.jsx",
+      "line": 761,
+      "cwe": "CWE-",
+      "snippet": "// TODO Update and remove comment once solution is finalized"
+     },
+     {
+      "severity": "low",
+      "file": "components/suggestion/command_provider/app_command_parser/app_command_parser.ts",
+      "line": 560,
+      "cwe": "CWE-",
+      "snippet": "//TODO: handle \\n, \\t, other escaped chars"
+     },
+     {
+      "severity": "low",
+      "file": "components/sidebar/sidebar_list/sidebar_list.tsx",
+      "line": 170,
+      "cwe": "CWE-",
+      "snippet": "// TODO: Copying over so it doesn't get lost, but we don't have a design for the sidebar on mobile yet"
+     },
+     {
+      "severity": "low",
+      "file": "components/sidebar/channel_navigator/index.ts",
+      "line": 22,
+      "cwe": "CWE-",
+      "snippet": "// TODO: For Phase 1. Will revisit history in Phase 2"
+     },
+     {
+      "severity": "low",
+      "file": "components/self_hosted_purchase_modal/useNoEscape.ts",
+      "line": 6,
+      "cwe": "CWE-",
+      "snippet": "// hack to disallow closing payment modal with escape."
+     },
+     {
+      "severity": "low",
+      "file": "components/search_results/index.tsx",
+      "line": 77,
+      "cwe": "CWE-",
+      "snippet": "// this is basically a hack to make ts compiler happy"
+     },
+     {
+      "severity": "low",
+      "file": "components/preparing_workspace/plugins.tsx",
+      "line": 16,
+      "cwe": "CWE-",
+      "snippet": "import TodoSVG from 'components/common/svg_images_components/todo_svg';"
+     },
+     {
+      "severity": "low",
+      "file": "components/preparing_workspace/steps.ts",
+      "line": 103,
+      "cwe": "CWE-",
+      "snippet": "todo: 'com.mattermost.plugin-todo',"
+     },
+     {
+      "severity": "low",
+      "file": "components/post_view/post_body_additional_content/post_body_additional_content.tsx",
+      "line": 157,
+      "cwe": "CWE-",
+      "snippet": "// TODO Put some log / message if the form is not valid?"
+     },
+     {
+      "severity": "low",
+      "file": "components/integrations/commands_container/commands_container.tsx",
+      "line": 78,
+      "cwe": "CWE-",
+      "snippet": "loadCommandsAndProfilesForTeam: (teamId?: string) => any; // TechDebt-TODO: This needs to be changed to 'Promise<void>'"
+     },
+     {
+      "severity": "low",
+      "file": "components/info_toast/info_toast.tsx",
+      "line": 28,
+      "cwe": "CWE-",
+      "snippet": "const undoTodo = useCallback(() => {"
+     },
+     {
+      "severity": "low",
+      "file": "components/global_header/left_controls/product_menu/product_menu.tsx",
+      "line": 59,
+      "cwe": "CWE-",
+      "snippet": "// TODO@UI: remove the onClick, when it is not a mandatory prop anymore"
+     },
+     {
+      "severity": "low",
+      "file": "components/emoji_picker/emoji_picker.tsx",
+      "line": 128,
+      "cwe": "CWE-",
+      "snippet": "// Hack for getting focus on search input when tab changes to emoji from gifs"
+     },
+     {
+      "severity": "low",
+      "file": "components/dot_menu/dot_menu.tsx",
+      "line": 316,
+      "cwe": "CWE-",
+      "snippet": "// This is required as post with mention doesn't have isFollowingThread property set to true but user with mention is following, so we will get null as value kind of hack for this."
+     },
+     {
+      "severity": "low",
+      "file": "components/data_prefetch/index.ts",
+      "line": 51,
+      "cwe": "CWE-",
+      "snippet": "// TODO We check for muted channels 3 times here: getUnreadChannels checks it, this checks it, and the mark_unread"
+     },
+     {
+      "severity": "low",
+      "file": "components/common/svg_images_components/access_denied_happy_svg.tsx",
+      "line": 332,
+      "cwe": "CWE-",
+      "snippet": "href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAi0AAAGvCAYAAACXeeU8AAAgAElEQVR4Xu3d7RM0WX0W4BNdVyMkQhAkawhvsrBqURX95N/vV19KK+EtkZSs2YW4CIEgYcMG6yZ9Km2nZ6Z7pmemfz1XV1HsPk9P9+nr"
+     },
+     {
+      "severity": "low",
+      "file": "components/common/svg_images_components/access_problem_svg.tsx",
+      "line": 288,
+      "cwe": "CWE-",
+      "snippet": "xlinkHref='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAi0AAAGvCAYAAACXeeU8AAAgAElEQVR4Xu3d7RM0WX0W4BNdVyMkQhAkawhvsrBqURX95N/vV19KK+EtkZSs2YW4CIEgYcMG6yZ9Km2nZ6Z7pmemfz1XV1HsPk9"
+     },
+     {
+      "severity": "low",
+      "file": "components/common/svg_images_components/celebrate_svg.tsx",
+      "line": 35,
+      "cwe": "CWE-",
+      "snippet": "xlinkHref='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAYAAACLz2ctAACKCklEQVR4nOz9d5gc1Zn+D3/OqdB5cpZGOQckkXPOYAwGG+864JzXYb32+uv12uuccwLnjHPGgEkmg0FIQqCcpRlNjh0rnPP741T"
+     },
+     {
+      "severity": "low",
+      "file": "components/common/svg_images_components/empty_billing_history_svg.tsx",
+      "line": 310,
+      "cwe": "CWE-",
+      "snippet": "xlinkHref='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAjgAAAD9CAYAAACxzw3YAAAgAElEQVR4Xu29TXQUV7bvufeJTEH37S7kqrmRlaqpJbt69bofVkq2e/oAU9MuMPi+tYzAfL1x8fXGBuSShNeqAkPNTSH3GCwlrLp"
+     }
+    ]
+   },
+   "A05-SecurityMisconfiguration": {
+    "count": 0,
+    "findings": []
+   },
+   "A06-VulnerableComponents": {
+    "count": 0,
+    "findings": []
+   },
+   "A07-AuthFailures": {
+    "count": 3,
+    "findings": [
+     {
+      "severity": "high",
+      "file": "components/integrations/confirm_integration/confirm_integration.test.tsx",
+      "line": 20,
+      "cwe": "CWE-798",
+      "snippet": "const token = 'jb6oyqh95irpbx8fo9zmndkp1r';"
+     },
+     {
+      "severity": "high",
+      "file": "components/claim/components/ldap_to_email.test.tsx",
+      "line": 24,
+      "cwe": "CWE-798",
+      "snippet": "const password = 'psw';"
+     },
+     {
+      "severity": "high",
+      "file": "components/admin_console/reset_password_modal/reset_password_modal.test.tsx",
+      "line": 70,
+      "cwe": "CWE-798",
+      "snippet": "const oldPassword = 'oldPassword123!';"
+     }
+    ]
+   },
+   "A08-SoftwareDataIntegrity": {
+    "count": 104,
+    "findings": [
+     {
+      "severity": "low",
+      "file": "components/formatted_markdown_message.test.tsx",
+      "line": 61,
+      "cwe": "CWE-319",
+      "snippet": "petName: 'http://www.mattermost.com',"
+     },
+     {
+      "severity": "low",
+      "file": "components/picture_selector.test.tsx",
+      "line": 27,
+      "cwe": "CWE-319",
+      "snippet": "src: 'http:///url.com/picture.jpg',"
+     },
+     {
+      "severity": "low",
+      "file": "components/setting_picture.test.tsx",
+      "line": 23,
+      "cwe": "CWE-319",
+      "snippet": "src: 'http://localhost:8065/api/v4/users/src_id',"
+     },
+     {
+      "severity": "low",
+      "file": "components/size_aware_image.jsx",
+      "line": 418,
+      "cwe": "CWE-319",
+      "snippet": "xmlns='http://www.w3.org/2000/svg'"
+     },
+     {
+      "severity": "low",
+      "file": "components/status_dropdown/status_dropdown.test.tsx",
+      "line": 66,
+      "cwe": "CWE-319",
+      "snippet": "profilePicture: 'http://localhost:8065/api/v4/users/jsx5jmdiyjyuzp9rzwfaf5pwjo/image?_=1590519110944',"
+     },
+     {
+      "severity": "low",
+      "file": "components/start_trial_modal/start_trial_modal_svg.tsx",
+      "line": 13,
+      "cwe": "CWE-319",
+      "snippet": "xmlns='http://www.w3.org/2000/svg'"
+     },
+     {
+      "severity": "low",
+      "file": "components/sidebar/sidebar_channel/sidebar_channel_menu/sidebar_channel_menu.test.tsx",
+      "line": 30,
+      "cwe": "CWE-319",
+      "snippet": "channelLink: 'http://a.fake.link',"
+     },
+     {
+      "severity": "low",
+      "file": "components/sidebar/sidebar_channel/sidebar_channel_link/sidebar_channel_link.test.tsx",
+      "line": 30,
+      "cwe": "CWE-319",
+      "snippet": "link: 'http://a.fake.link',"
+     },
+     {
+      "severity": "low",
+      "file": "components/profile_picture/profile_picture.test.tsx",
+      "line": 13,
+      "cwe": "CWE-319",
+      "snippet": "src: 'http://example.com/image.png',"
+     },
+     {
+      "severity": "low",
+      "file": "components/product_notices_modal/product_notices.test.tsx",
+      "line": 21,
+      "cwe": "CWE-319",
+      "snippet": "actionParam: 'http://download.com/path',"
+     },
+     {
+      "severity": "low",
+      "file": "components/pricing_modal/building.svg.tsx",
+      "line": 13,
+      "cwe": "CWE-319",
+      "snippet": "xmlns='http://www.w3.org/2000/svg'"
+     },
+     {
+      "severity": "low",
+      "file": "components/pricing_modal/tada.svg.tsx",
+      "line": 13,
+      "cwe": "CWE-319",
+      "snippet": "xmlns='http://www.w3.org/2000/svg'"
+     },
+     {
+      "severity": "low",
+      "file": "components/pricing_modal/downgrade_team_removal_modal/downgrade_team_removal_modal.test.tsx",
+      "line": 264,
+      "cwe": "CWE-319",
+      "snippet": "url: 'http://example.com',"
+     },
+     {
+      "severity": "low",
+      "file": "components/post_view/post_attachment_opengraph/post_attachment_opengraph.test.tsx",
+      "line": 29,
+      "cwe": "CWE-319",
+      "snippet": "secure_url: 'http://localhost:8065/api/v4/image?url=http%3A%2F%2Fmattermo\u2026t.com%2Fwp-content%2Fuploads%2F2021%2F09%2FHomepage%402x.png',"
+     },
+     {
+      "severity": "low",
+      "file": "components/post_view/message_attachments/message_attachment/message_attachment.test.tsx",
+      "line": 143,
+      "cwe": "CWE-319",
+      "snippet": "author_icon: 'http://example.com/author.png',"
+     },
+     {
+      "severity": "low",
+      "file": "components/post_profile_picture/post_profile_picture.test.tsx",
+      "line": 45,
+      "cwe": "CWE-319",
+      "snippet": "postIconOverrideURL: 'http://example.com/image.png',"
+     },
+     {
+      "severity": "low",
+      "file": "components/plugin_marketplace/marketplace_modal.test.tsx",
+      "line": 120,
+      "cwe": "CWE-319",
+      "snippet": "siteURL: 'http://example.com',"
+     },
+     {
+      "severity": "low",
+      "file": "components/plugin_marketplace/marketplace_item/marketplace_item_plugin/marketplace_item_plugin.test.tsx",
+      "line": 22,
+      "cwe": "CWE-319",
+      "snippet": "releaseNotesUrl: 'http://example.com/release',"
+     },
+     {
+      "severity": "low",
+      "file": "components/plugin_marketplace/marketplace_item/marketplace_item_app/marketplace_item_app.test.tsx",
+      "line": 15,
+      "cwe": "CWE-319",
+      "snippet": "homepageUrl: 'http://example.com',"
+     },
+     {
+      "severity": "low",
+      "file": "components/invitation_modal/overage_users_banner_notice/overage_users_banner_notice.test.tsx",
+      "line": 73,
+      "cwe": "CWE-319",
+      "snippet": "CWSURL: 'http://testing',"
+     },
+     {
+      "severity": "low",
+      "file": "components/interactive_dialog/interactive_dialog.test.jsx",
+      "line": 18,
+      "cwe": "CWE-319",
+      "snippet": "url: 'http://example.com',"
+     },
+     {
+      "severity": "low",
+      "file": "components/integrations/abstract_incoming_hook.test.tsx",
+      "line": 139,
+      "cwe": "CWE-319",
+      "snippet": "const newIconURL = 'http://example.com/icon';"
+     },
+     {
+      "severity": "low",
+      "file": "components/integrations/installed_incoming_webhook.test.tsx",
+      "line": 25,
+      "cwe": "CWE-319",
+      "snippet": "icon_url: 'http://test/icon.png',"
+     },
+     {
+      "severity": "low",
+      "file": "components/integrations/installed_outgoing_webhook.test.jsx",
+      "line": 22,
+      "cwe": "CWE-319",
+      "snippet": "callback_urls: ['http://adsfdasd.com'],"
+     },
+     {
+      "severity": "low",
+      "file": "components/integrations/installed_outgoing_webhooks/installed_outgoing_webhooks.test.tsx",
+      "line": 30,
+      "cwe": "CWE-319",
+      "snippet": "callback_urls: ['http://adsfdasd.com'],"
+     }
+    ]
+   },
+   "A09-LoggingMonitoringFailures": {
+    "count": 0,
+    "findings": []
+   },
+   "A10-SSRF": {
+    "count": 0,
+    "findings": []
+   }
+  }
+ },
+ "owasp_llm_top10": {
+  "total_findings": 1,
+  "files_with_findings": 1,
+  "severity": {
+   "high": 1,
+   "medium": 0,
+   "low": 0
+  },
+  "categories": {
+   "LLM01-PromptInjection": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM02-SensitiveInfoDisclosure": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM03-SupplyChain": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM04-DataPoisoning": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM05-ImproperOutputHandling": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM06-ExcessiveAgency": {
+    "count": 1,
+    "findings": [
+     {
+      "severity": "high",
+      "file": "components/admin_console/schema_admin_settings.jsx",
+      "line": 677,
+      "cwe": "CWE-862",
+      "snippet": "handleChange = (id, value, confirm = false, doSubmit = false, warning = false) => {"
+     }
+    ]
+   },
+   "LLM07-SystemPromptLeak": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM08-VectorEmbeddingWeaknesses": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM09-Misinformation": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM10-UnboundedConsumption": {
+    "count": 0,
+    "findings": []
+   }
+  }
+ },
+ "sbom": {
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:ba8546eb-0f24-5ac4-8941-0afc8cd32e73",
+  "version": 1,
+  "metadata": {
+   "timestamp": "2026-10-06T09:45:04Z",
+   "component": {
+    "type": "application",
+    "name": "MATTERMOST",
+    "version": "83b357604d34",
+    "bom-ref": "pkg:generic/anticloud/MATTERMOST@83b357604d34",
+    "purl": "pkg:generic/anticloud/MATTERMOST@83b357604d34",
+    "licenses": [
+     {
+      "license": {
+       "id": "Apache-2.0"
+      }
+     }
+    ]
+   },
+   "properties": [
+    {
+     "name": "anticloud:source-commit",
+     "value": "REMOVED_CONTAMINATED_SHA_PENDING_API_RESOLVE"
+    },
+    {
+     "name": "anticloud:source-url",
+     "value": "https://github.com/the-anticloud/OPENMRS_CORE.git"
+    },
+    {
+     "name": "anticloud:tier",
+     "value": "tier-agent"
+    }
+   ]
+  },
+  "components": []
+ },
+ "elapsed_seconds": 298.76
+}
